@@ -3,13 +3,13 @@ import hidden_4
 
 if __name__ == "__main__":
     words = dir(hidden_4)
-    filtered_words = []
+    words_filtered = []
 
     for name in words:
         if not name.startswith('__'):
-            filtered_words.append(name)
+            words_filtered.append(name)
 
-    filtered_words.sort()
+    words_filtered.sort()
 
-    for name in filtered_words:
+    for name in words_filtered:
         print(name)
