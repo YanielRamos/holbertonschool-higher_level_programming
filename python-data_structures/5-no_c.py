@@ -3,7 +3,7 @@
 
 def no_c(my_string):
 
-    if my_string is None:
+    if my_string == "":
         return
 
     new_string = my_string.replace('c', "").replace('C', "")
