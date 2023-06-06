@@ -7,9 +7,9 @@ def print_matrix_integer(matrix=[[]]):
         return
 
     for row in matrix:
-        for i, element in enumerate(row):
+        for i, digit in enumerate(row):
             if i != len(row) - 1:
-                print(element, end=' ')
+                print("{:d}".format(digit), end=' ')
             else:
-                print(element, end='$')
+                print("{:d}$".format(digit), end='')
         print()
