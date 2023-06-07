@@ -11,4 +11,4 @@ def print_matrix_integer(matrix=[[]]):
             if i != 0:
                 print(" ", end="")
             print("{:d}".format(digit), end='')
-        print("$")
+        print("")
