@@ -5,7 +5,7 @@ def number_keys(a_dictionary):
 
     num = 0
 
-    for keys in range(len(a_dictionary)):
-        num += keys
+    for _ in a_dictionary:
+        num += 1
 
     return num
