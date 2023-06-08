@@ -3,8 +3,11 @@
 
 def search_replace(my_list, search, replace):
 
-    if my_list is None or len(my_list) == 0:
+    if my_list is None:
         return
+
+    if len(my_list) == 0:
+        return my_list
 
     new_list = my_list.copy()
 
