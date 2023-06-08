@@ -4,7 +4,7 @@
 def uniq_add(my_list=[]):
 
     if my_list is None or len(my_list) == 0:
-        return my_list
+        return 0
 
     uniq_list = set(my_list)
     num = 0
