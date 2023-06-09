@@ -12,5 +12,5 @@ def safe_print_list(my_list=[], x=0):
         print()
         return count
     except IndexError:
-        print("X is bigger than my_list")
+        print("x is bigger than my_list")
         return count
