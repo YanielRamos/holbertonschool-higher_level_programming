@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-module: 3-square
+module: 4-square
 class Square
 """
 
