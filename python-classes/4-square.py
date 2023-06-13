@@ -33,7 +33,7 @@ class Square:
     @size.setter
     def size(self, value):
         """
-        defining size to ssquare if size is
+        defining size to square if value is
         an int and bigger than 0
         """
         if not isinstance(value, int):
