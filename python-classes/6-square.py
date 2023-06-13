@@ -25,6 +25,7 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
+        """printing the output"""
         if self.__size == 0:
             print()
         else:
@@ -53,10 +54,16 @@ class Square:
 
     @property
     def position(self):
+        """
+        returning the position
+        """
         return self.__position
 
     @position.setter
     def position(self, value):
+        """
+        defining the position if value is a tuple of 2 with only integers
+        """
         if not isinstance(value, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
         if not len(value) == 2:
