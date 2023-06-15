@@ -8,9 +8,8 @@ def add_integer(a, b=98):
     """
     Adds two integers
 
-    Args:
-        a (int or float): The first number
-        b (int or float): The second number
+    a (int or float): The first number
+    b (int or float): The second number
 
     Returns:
         int: The addition of a and b
