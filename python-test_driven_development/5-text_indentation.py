@@ -8,9 +8,10 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    punctuation_marks = [".", "?", ":"]
+    symbols = [".", "?", ":"]
 
     for char in text:
-        print(char, end="")
-        if char in punctuation_marks:
-            print("\n\n", end="")
+        if char in symbols:
+            print(f"{char}\n", end="\n")
+        else:
+            print(char, end="")
