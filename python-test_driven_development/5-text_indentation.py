@@ -10,15 +10,8 @@ def text_indentation(text):
 
     symbols = [".", "?", ":"]
 
-    skip_space = False
-
     for char in text:
-        if skip_space:
-            if char != " ":
-                print(char, end="")
-                skip_space = False
-        elif char in symbols:
-            print(f"{char}\n", end="\n\n")
-            skip_space = True
+        if char in symbols:
+            print(f"{char}\n", end="\n")
         else:
             print(char, end="")
