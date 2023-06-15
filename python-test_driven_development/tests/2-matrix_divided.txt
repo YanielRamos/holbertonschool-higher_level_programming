@@ -1,4 +1,4 @@
-The ``add_integer`` function
+The ``matrix_divided`` function
 ---------------------------
 Divide all elements of a matrix by a given divisor.
 
