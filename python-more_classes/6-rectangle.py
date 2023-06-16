@@ -9,6 +9,7 @@ class Rectangle:
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
+        """Method that initializes the instances"""
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
@@ -46,7 +47,7 @@ class Rectangle:
         return self.__height * self.__width
 
     def perimeter(self):
-        """function that return the perimeter"""
+        """function that calculates the perimeter"""
         if self.__height == 0 or self.__width == 0:
             return 0
         return 2 * (self.__height + self.__width)
@@ -61,6 +62,7 @@ class Rectangle:
         return string.rstrip()
 
     def __repr__(self):
+        """Method that returns the string represantion of the instance"""
         return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
