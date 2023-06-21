@@ -4,9 +4,10 @@
 
 
 class MyList(list):
-    """method that sort a list"""
+    """class that inherits attributes reference of class list"""
 
     def print_sorted(self):
-        if isinstance(self, list):
-            sortlist = sorted(self)
-            print(sortlist)
+        """Method that prints the sorted list"""
+        sortlist = self.copy()
+        sortlist.sort()
+        print(sortlist)
