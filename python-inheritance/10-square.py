@@ -43,6 +43,8 @@ class Square(Rectangle):
     """ class inherited from Rectangle"""
 
     def __init__(self, size):
+        """method that set size private and validate if is
+        a positive integer"""
         self.integer_validator("size", size)
         self.__size = size
 
