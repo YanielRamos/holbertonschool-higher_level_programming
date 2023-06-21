@@ -6,4 +6,5 @@ specified class"""
 
 
 def inherits_from(obj, a_class):
+    """function that return true or false"""
     return issubclass(type(obj), a_class) and type(obj) is not a_class
