@@ -5,5 +5,6 @@ end of a text file"""
 
 
 def append_write(filename="", text=""):
+    """function that appends a text"""
     with open(filename, "a") as file:
         return file.append(text)
