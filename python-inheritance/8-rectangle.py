@@ -7,6 +7,9 @@ class Rectangle(BaseGeometry):
     """class inherited from Basegeometry"""
 
     def __init__(self, width, height):
-        """Method that set wight and height private"""
+        """Method that set width and height private and
+        validate that they are positive integers"""
         self.__width = width
         self.__height = height
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
