@@ -4,11 +4,6 @@
 
 
 class MyList(list):
-    """init method"""
-
-    def __init__(self):
-        pass
-
     def print_sorted(self):
         """method that sort a list"""
         if isinstance(self, list):
