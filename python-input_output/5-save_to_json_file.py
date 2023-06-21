@@ -5,8 +5,7 @@
 import json
 
 
-def save_to_json_file(my_obj, filename):
-    """function that writes a json object to a file"""
-    obj = json.dump(my_obj)
+def save_to_jsoin_file(my_obj, filename):
+    """function that writes a json object the file"""
     with open(filename, "w") as file:
-        return file.write(obj)
+        json.dump(my_obj, file)
