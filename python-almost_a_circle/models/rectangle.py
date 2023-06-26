@@ -3,6 +3,7 @@
 that inherits form class Base"""
 
 from models.base import Base
+import sys
 
 
 class Rectangle(Base):
@@ -112,3 +113,17 @@ class Rectangle(Base):
         str_hw = f"{self.__width}/{self.__height}"
         str_return = str_rectangle + str_id + str_xy + str_hw
         return str_return
+
+    def update(self, *args):
+        """method that add an args info to each attribute"""
+        for i in range(len(args)):
+            if i == 0:
+                self.id = args[0]
+            if i == 1:
+                self.__width = args[1]
+            if i == 2:
+                self.__height = args[2]
+            if i == 3:
+                self.__x = args[3]
+            if i == 4:
+                self.__y = args[4]
