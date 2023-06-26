@@ -103,3 +103,12 @@ class Rectangle(Base):
             rectangle += (" " * self.__x)
             rectangle += ("#" * self.__width) + "\n"
         print(rectangle, end="")
+
+    def __str__(self):
+        """special method for str"""
+        str_rectangle = "[Rectangle] "
+        str_id = f"({self.id}) "
+        str_xy = f"{self.__x}/{self.__y} - "
+        str_hw = f"{self.__width}/{self.__height}"
+        str_return = str_rectangle + str_id + str_xy + str_hw
+        return str_return
