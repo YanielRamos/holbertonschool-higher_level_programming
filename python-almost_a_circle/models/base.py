@@ -10,7 +10,6 @@ class Base:
         """Initializes instances"""
         if id is None:
             Base.__nb_objects += 1
-            id += Base.__nb_objects
-            self.id = id
+            self.id = Base.__nb_objects
         else:
             self.id = id
