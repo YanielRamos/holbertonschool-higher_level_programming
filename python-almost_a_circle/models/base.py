@@ -26,4 +26,5 @@ class Base:
         return json_string
 
     def save_to_file(cls, list_objs):
+        """save file method"""
         pass
