@@ -24,3 +24,6 @@ class Base:
             else:
                 json_string = json.dumps(list_dictionaries)
         return json_string
+
+    def save_to_file(cls, list_objs):
+        pass
