@@ -13,15 +13,20 @@ class Square(Rectangle):
 
     def __str__(self):
         """str special method"""
-        return f"[Square] ({self.id}) {self.__x}/{self.__y} - {self.__width}"
+        str_square = "[Square] "
+        str_id = f"({self.id}) "
+        str_xy = f"{self.x}/{self.y} - "
+        str_hw = f"{self.width}"
+        str_return = str_square + str_id + str_xy + str_hw
+        return str_return
 
     @property
     def size(self):
         """size getter"""
-        return self.__width
+        return self.width
 
     @size.setter
     def size(self, value):
         """size setter"""
-        self.__width = value
-        self.__height = value
+        self.width = value
+        self.height = value
