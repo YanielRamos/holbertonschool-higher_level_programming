@@ -27,4 +27,3 @@ class Base:
 
     def save_to_file(cls, list_objs):
         """save file method"""
-        pass
