@@ -114,16 +114,14 @@ class Rectangle(Base):
         str_return = str_rectangle + str_id + str_xy + str_hw
         return str_return
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """method that add an args info to each attribute"""
-        for i in range(len(args)):
-            if i == 0:
-                self.id = args[0]
-            if i == 1:
-                self.__width = args[1]
-            if i == 2:
-                self.__height = args[2]
-            if i == 3:
-                self.__x = args[3]
-            if i == 4:
-                self.__y = args[4]
+        if args:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+            self.__y = args[4]
+        elif kwargs:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
