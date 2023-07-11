@@ -37,3 +37,28 @@ class Base:
 
         with open(filename, 'w') as file:
             file.write(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Returns instance with attributes already set"""
+        if cls.__name__ == "Square":
+            dummy = cls(1)
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)
+        dummy.update(**dictionary)
+        return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        Return a list of instance
+        """
+        filename = cls.__name__ + '.json'
+        if path.exists(filename) is False:
+            return []
+        with open(filename, 'r') as fd:
+            attrs_dic = cls.from_json_string(fd.read())
+            li = []
+            for i in attrs_dic:
+                li.append(cls.create(**i))
+            return li
