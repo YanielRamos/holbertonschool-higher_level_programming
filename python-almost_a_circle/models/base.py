@@ -2,7 +2,7 @@
 """Module with a class called Base"""
 
 import json
-
+from os import path
 
 class Base:
     """Class Base"""
