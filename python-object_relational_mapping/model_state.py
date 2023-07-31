@@ -7,7 +7,7 @@ from model_state import Base, State
 
 
 class City(Base):
-    """City"""
+    """Class that represents a city"""
     _tablename__ = "cities"
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
