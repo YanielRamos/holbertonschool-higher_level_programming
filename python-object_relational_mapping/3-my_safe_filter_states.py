@@ -12,10 +12,8 @@ if __name__ == '__main__':
         host='localhost',
         port=3306,
     )
-    state_name = sys.argv[4]
-
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY %s", state_name)
+    cur.execute("SELECT * FROM states WHERE name = %s;", (sys.argv[4],))
     states = cur.fetchall()
 
     for state in states:
