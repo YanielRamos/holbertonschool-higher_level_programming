@@ -8,11 +8,12 @@ fetch("https://swapi-api.hbtn.io/api/films/?format=json")
     return response.json();
 })
 .then(function(data){
-    data.results.foreach(function(movie){
+    console.log(data)
+    data.results.forEach(function(movie){
         var movie_title = document.createElement('li');
-        
+
         movie_title.textContent = movie.title;
-        
+
         list_movies.appendChild(movie_title);
     });
 })
